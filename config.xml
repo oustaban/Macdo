@@ -47,7 +47,7 @@
 	<preference name="ShowSplashScreenSpinner" value="true"/>
 	<preference name="SplashMaintainAspectRatio" value="true" />
 	<preference name="SplashShowOnlyFirstTime" value="false" />
-	<preference name="SplashScreenBackgroundColor" value="0x003d1c"/>
+	<preference name="SplashScreenBackgroundColor" value="0xffffff"/>
 	<preference name="SplashScreen" value="splash.png"/>
 	<preference name="FadeSplashScreen" value="false"/>
 	
