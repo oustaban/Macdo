@@ -64,6 +64,7 @@
 		<icon src="assets/icon/android/icon-48-mdpi.png" width="48" height="48" />
 		<icon src="assets/icon/android/icon-72-hdpi.png" width="72" height="72" />
 		<icon src="assets/icon/android/icon-144-xxhdpi.png" width="144" height="144" />
+		<icon src="assets/icon/android/icon-192-xxxhdpi.png" width="192" height="192" />
 		
 		<splash src="assets/splash/android/android_ldpi_portrait.png" density="port-ldpi"/>
 		<splash src="assets/splash/android/android_mdpi_portrait.png" density="port-mdpi"/>
