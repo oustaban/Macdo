@@ -52,6 +52,9 @@
 			
 		}//);
 		
+		$(document).bind('deviceready', function() {
+			console.log('ready');
+		});	
 		function checkConnection() {
           var networkState = navigator.network.connection.type;
           var states = {};
