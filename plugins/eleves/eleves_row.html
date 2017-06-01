@@ -1,0 +1,16 @@
+<% _.each(users, function(user) { %>
+<li class="nav-item" id="lielevelP" eleve="eleveP<%= user.id %>">
+    <div style="float:left;width:100%">
+        <a href="javascript:void(0)" class="media touch-row" >
+            
+            <div class="bdeleve">
+              <input class="elevecheckbox" id="eleveP<%= user.id %>" type="checkbox" name="participants[]" value="<%= user.id %>">
+              <span><%= user.fullname %></span>
+            </div>
+        </a>
+    </div>
+    
+    </div>
+    
+</li>
+<% }); %>

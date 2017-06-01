@@ -1,0 +1,16 @@
+<% _.each(users, function(user) { %>
+<li class="nav-item">
+    <div style="float:left;width:100%">
+        <a href="#participant/<%= courseId %>/<%= user.id %>" class="media touch-row">
+            <div class="img">
+                <img src="<%= user.profileimageurlsmall %>" alt="img">
+            </div>
+            <div class="bd">
+              <p><%= user.fullname %></p>
+            </div>
+        </a>
+    </div>
+    
+    
+</li>
+<% }); %>

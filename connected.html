@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/styles.css">
+    <script src="cordova.js"></script>
+    <script src="externallib/jquery.min.js"></script>
+    <script src="externallib/jquery.touchSwipe.min.js"></script>
+    <script src="externallib/md5.js"></script>
+    <script src="externallib/matchMedia.js"></script>
+    <script src="externallib/matchMedia.addListener.js"></script>
+    <script src="externallib/underscore.js"></script>
+    <script src="externallib/backbone.js"></script>
+    <script src="externallib/backbone-localstorage.js"></script>
+    <script src="externallib/modernizr.custom.34982.js"></script>
+    <script src="lib/mm.js"></script>
+    <script src="lib/mm.panels.js"></script>
+    <script src="lib/mm.util.js"></script>
+    <script src="lib/mm.lang.js"></script>
+    <script src="lib/mm.db.js"></script>
+    <script src="lib/mm.tpl.js"></script>
+    <script src="lib/mm.cache.js"></script>
+    <script src="lib/mm.settings.js"></script>
+    <script src="lib/mm.widgets.js"></script>
+    <script src="lib/mm.sync.js"></script>
+    <script src="lib/mm.emulator.js"></script>
+    <script src="lib/mm.rdebugger.js"></script>
+    <script src="lib/mm.fs.js"></script>
+    <script data-main="lib/app.js" src="externallib/require.js"></script>
+    <script language="javascript">
+		var deconnected = 0;
+		//$(document).bind('deviceready', function() {
+		window.onload = function(e) {
+			screen.lockOrientation('landscape');
+			StatusBar.hide();
+			console.log('connected:'+networkState);
+			var networkState = checkConnection();
+			setInterval(function() {
+					networkState = checkConnection();
+					if (networkState == Connection.NONE)
+						deconnected = deconnected + 1;
+					console.log('interval:'+networkState+','+deconnected);
+					if (deconnected >= 3) {
+						window.location="./index.html";
+					}
+			}, 10000);
+			
+		}//);
+		
+		function checkConnection() {
+          var networkState = navigator.network.connection.type;
+          var states = {};
+          states[Connection.UNKNOWN]  = 'Unknown connection';
+          states[Connection.ETHERNET] = 'Ethernet connection';
+          states[Connection.WIFI]     = 'WiFi connection';
+          states[Connection.CELL_2G]  = 'Cell 2G connection';
+          states[Connection.CELL_3G]  = 'Cell 3G connection';
+          states[Connection.CELL_4G]  = 'Cell 4G connection';
+          states[Connection.NONE]     = 'No network connection';
+        
+          return networkState;
+        
+       }
+    </script>
+</head>
+<body>
+<iframe sandbox="allow-forms allow-popups allow-scripts allow-top-navigation" src="http://cdispo.moonlikestudio.com" id="iframe1" style="border: 0; width: 100%; height: 100%"></iframe>
+</body>
+</html>
