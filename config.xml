@@ -26,6 +26,18 @@
 
     <preference name="AndroidPersistentFileLocation" value="Compatibility" />
     <preference name="iosPersistentFileLocation" value="Compatibility" />
+	
+	<preference name="AutoHideSplashScreen" value="true" />
+	<preference name="SplashScreenDelay" value="3000" />
+	<preference name="ShowSplashScreenSpinner" value="false"/>
+	<preference name="SplashMaintainAspectRatio" value="true" />
+	<preference name="SplashShowOnlyFirstTime" value="false" />
+	<preference name="SplashScreenBackgroundColor" value="0x003d1c"/>
+
+
+
+
+
 
 	<platform name="android">
 		<icon src="assets/icon/android/icon-96-xhdpi.png" width="96" height="96" />
