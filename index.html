@@ -38,11 +38,7 @@
 		window.onload = function(e) {
 			//screen.lockOrientation('landscape');
 			StatusBar.hide();
-			navigator.splashscreen.show();
-			window.setTimeout(function () {
-				navigator.splashscreen.hide();
-			}, 3000);
-
+			
 			console.log('connected:'+networkState);
 			var networkState = checkConnection();
 			setInterval(function() {
