@@ -105,6 +105,8 @@
 		<splash src="assets/splash/ios/ipad_landscape.png" width="1024" height="748"/>
 		<splash src="assets/splash/ios/ipad_retina_portrait.png" width="1536" height="2008"/>
 		<splash src="assets/splash/ios/ipad_retina_landscape.png" width="2048" height="1496"/>
+		<splash src="assets/splash/ios/iphone6_landscape.png" width="1334" height="750"/>
+		<splash src="assets/splash/ios/iphone6_portrait.png" width="750" height="1334"/>
 		
 	</platform>
     
