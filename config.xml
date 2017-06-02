@@ -59,12 +59,13 @@
 
 
 	<platform name="android">
-		<icon src="assets/icon/android/icon-96-xhdpi.png" width="96" height="96" />
-		<icon src="assets/icon/android/icon-36-ldpi.png" width="36" height="36" />
-		<icon src="assets/icon/android/icon-48-mdpi.png" width="48" height="48" />
-		<icon src="assets/icon/android/icon-72-hdpi.png" width="72" height="72" />
-		<icon src="assets/icon/android/icon-144-xxhdpi.png" width="144" height="144" />
-		<icon src="assets/icon/android/icon-192-xxxhdpi.png" width="192" height="192" />
+		
+		<icon src="assets/icon/android/icon-96-xhdpi.png" qualifier="xhdpi" />
+		<icon src="assets/icon/android/icon-36-ldpi.png" qualifier="ldpi" />
+		<icon src="assets/icon/android/icon-48-mdpi.png" qualifier="mdpi" />
+		<icon src="assets/icon/android/icon-72-hdpi.png" qualifier="hdpi" />
+		<icon src="assets/icon/android/icon-144-xxhdpi.png" qualifier="xxhdpi" />
+		<icon src="assets/icon/android/icon-192-xxxhdpi.png" qualifier="xxxhdpi" />
 		
 		<splash src="assets/splash/android/android_ldpi_portrait.png" density="port-ldpi"/>
 		<splash src="assets/splash/android/android_mdpi_portrait.png" density="port-mdpi"/>
