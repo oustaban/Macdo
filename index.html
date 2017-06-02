@@ -34,11 +34,11 @@
     <script data-main="lib/app.js" src="externallib/require.js"></script>
     <script language="javascript">
 		var deconnected = 0;
-		//$(document).bind('deviceready', function() {
-		window.onload = function(e) {
+		$(document).bind('deviceready', function() {
+		//window.onload = function(e) {
 			//screen.lockOrientation('landscape');
 			StatusBar.hide();
-			navigator.splashscreen.show();
+			//navigator.splashscreen.show();
 
 			console.log('connected:'+networkState);
 			var networkState = checkConnection();
@@ -52,11 +52,9 @@
 					}
 			}, 10000);
 			
-		}//);
+		});
 		
-		$(document).bind('deviceready', function() {
-			console.log('ready');
-		});	
+		
 		function checkConnection() {
           var networkState = navigator.network.connection.type;
           var states = {};
