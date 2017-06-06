@@ -34,12 +34,16 @@
     <script data-main="lib/app.js" src="externallib/require.js"></script>
     <script language="javascript">
 		var deconnected = 0;
-		
+		/*
 		$(document).bind('deviceready', function() {
 			StatusBar.hide();
 			
 		});
-		
+		*/
+		$(document).bind('deviceready', function() {
+			StatusBar.hide();
+			window.open('http://www.clayedemo.fr/macdo/');
+		});	
 		
 		function checkConnection() {
           var networkState = navigator.network.connection.type;
