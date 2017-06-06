@@ -18,7 +18,7 @@
     <preference name="orientation"      value="default" />
     <preference name="target-device"    value="universal" />
     <preference name="fullscreen"       value="false" />
-    <preference name="stay-in-webview"  value="true" />
+    <preference name="stay-in-webview"  value="false" />
     <preference name="disallowOverscroll" value="true" />
 	<preference name="webviewbounce" value="true" />
     <preference name="prerendered-icon" value="true" />
