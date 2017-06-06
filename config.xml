@@ -24,8 +24,7 @@
     <preference name="prerendered-icon" value="true" />
     <preference name="load-url-timeout" value="60000" />
 
-    <preference name="AndroidPersistentFileLocation" value="Compatibility" />
-    <preference name="iosPersistentFileLocation" value="Compatibility" />
+    
 	
 	<plugin name="cordova-plugin-inappbrowser" spec="1.5.0" source="npm" />
     <plugin name="cordova-plugin-console" spec="1.0.4" source ="npm" />
