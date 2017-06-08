@@ -40,6 +40,7 @@
 			StatusBar.hide();
 			
 		}
+		
 		$(document).bind('deviceready', function() {
 			StatusBar.hide();
 			//cordova.InAppBrowser.open('http://www.clayedemo.fr/macdo/','_self','location=no');
@@ -56,7 +57,7 @@
 				if(e.url.indexOf('system_browser') > -1) {
 			
 			
-					//ref.close();
+					ref.close();
 			
 					
 					cordova.InAppBrowser.open(e.url, '_system');
