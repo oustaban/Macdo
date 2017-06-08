@@ -43,7 +43,29 @@
 		$(document).bind('deviceready', function() {
 			StatusBar.hide();
 			//cordova.InAppBrowser.open('http://www.clayedemo.fr/macdo/','_self','location=no');
-			cordova.InAppBrowser.open('http://195.154.116.73/test/','_self','location=no,zoom=yes,clearcache=yes,clearsessioncache=yes');
+			//cordova.InAppBrowser.open('http://195.154.116.73/test/','_self','location=no,zoom=yes,clearcache=yes,clearsessioncache=yes');
+		});
+		
+		//var url='http://195.154.116.73/test/';
+		var ref = window.open('http://195.154.116.73/test/', '_blank', 'toolbarposition=top,location=no');
+
+
+
+		ref.addEventListener('loadstart', function(e) {
+		
+		
+			if(e.url.indexOf('system_browser') > -1) {
+		
+		
+				ref.close();
+		
+		
+				window.open(e.url, '_system');
+		
+		
+			}
+		
+		
 		});
 		
 		
