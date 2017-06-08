@@ -43,7 +43,7 @@
 		$(document).bind('deviceready', function() {
 			StatusBar.hide();
 			//cordova.InAppBrowser.open('http://www.clayedemo.fr/macdo/','_self','location=no');
-			cordova.InAppBrowser.open('http://195.154.116.73/test/','_self','location=no');
+			//cordova.InAppBrowser.open('http://195.154.116.73/test/','_self','location=no');
 		});
 		
 		
@@ -64,6 +64,13 @@
     </script>
 </head>
 <body>
+	
+<p><a href="javascript:void(0)" onclick="cordova.InAppBrowser.open('http://195.154.116.73/test/indicateurs%20cdg%20decembre%202015.xlsx', '_system');">TEST _system</a></p>
+<p><a href="javascript:void(0)" onclick="cordova.InAppBrowser.open('http://195.154.116.73/test/indicateurs%20cdg%20decembre%202015.xlsx', '_blank');">TEST _blank</a></p>
+<p><a href="javascript:void(0)" onclick="cordova.InAppBrowser.open('http://195.154.116.73/test/indicateurs%20cdg%20decembre%202015.xlsx', '_self');">TEST _self</a></p>
+<p><a href="javascript:void(0)" onclick="window.open('http://195.154.116.73/test/indicateurs%20cdg%20decembre%202015.xlsx', '_system');">TES window open _systemT</a></p>
+<p><a href="http://195.154.116.73/test/indicateurs%20cdg%20decembre%202015.xlsx" target="_blank">TES window open _systemT</a></p>
+
 <!--<a href="javascript:void(0)" onclick="cordova.InAppBrowser.open('http://www.clayedemo.fr/macdo/sites/default/files/indicateurs%20cdg%20decembre%202015.xlsx', '_system');">TEST</a>-->
 <!--<iframe sandbox="allow-forms allow-popups allow-scripts allow-top-navigation" src="http://195.154.116.73/test/" id="iframe1" style="border: 0; width: 100%; height: 100%"></iframe>-->
 </body>
