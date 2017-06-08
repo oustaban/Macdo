@@ -45,7 +45,7 @@
 			//cordova.InAppBrowser.open('http://www.clayedemo.fr/macdo/','_self','location=no');
 			//cordova.InAppBrowser.open('http://195.154.116.73/test/','_self','location=no,zoom=yes,clearcache=yes,clearsessioncache=yes');
 			
-			var ref = window.open('http://195.154.116.73/test/', '_blank' ,'toolbar=no');
+			var ref = window.open('http://195.154.116.73/test/', '_blank' ,'toolbar=no,location=no');
 
 
 
@@ -58,8 +58,9 @@
 			
 					//ref.close();
 			
+					
+					cordova.InAppBrowser.open(e.url, '_system');
 					e.preventDefault();
-					window.open(e.url, '_system');
 			
 			
 				}
