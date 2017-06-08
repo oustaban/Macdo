@@ -122,7 +122,8 @@
     <allow-intent href="tel:*" />  
     <allow-intent href="sms:*" />  
     <allow-intent href="mailto:*" />  
-    <allow-intent href="geo:*" />  
+    <allow-intent href="geo:*" />
+	<allow-intent href="*" /> 
     <platform name="android">  
         <allow-intent href="market:*" />  
     </platform>  
@@ -143,6 +144,7 @@
     <allow-navigation href="http://*/*" />
 	<allow-navigation href="https://*/*" />
 	<allow-navigation href="data:*" />
+	<allow-navigation href=*" />
 
     <!-- See MOBILE-892 -->
     <preference name="permissions" value="none"/>
