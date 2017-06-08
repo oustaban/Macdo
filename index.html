@@ -56,10 +56,13 @@
 			
 			
 					
-			
+					ref.stop();
+					ref.history.back();
+					
 					
 					cordova.InAppBrowser.open(e.url, '_system');
 					e.preventDefault();
+					return;
 					
 			
 			
@@ -77,7 +80,7 @@
 					
 			
 					
-					ref.back(-2);
+					ref.history.back();
 					e.preventDefault();
 					
 			
