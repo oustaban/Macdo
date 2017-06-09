@@ -53,7 +53,7 @@
 		
 		function listenMessage(msg) {
 			console.log(msg.data);
-			cordova.InAppBrowser.open(msg.data,'_blank','location=no,toolbar=yes,hidden=no,zoom=yes,enableViewportScale=yes,clearcache=yes,clearsessioncache=yes,useWideViewPort=no');
+			cordova.InAppBrowser.open(msg.data,'_self','location=no,toolbar=yes,hidden=no,zoom=yes,enableViewportScale=yes,clearcache=yes,clearsessioncache=yes,useWideViewPort=no');
 		}
 		//var url='http://195.154.116.73/test/';
 		
