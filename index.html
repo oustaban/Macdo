@@ -53,7 +53,7 @@
 		
 		function listenMessage(msg) {
 			console.log(msg.data);
-			cordova.InAppBrowser.open(msg.data,'_system');
+			cordova.InAppBrowser.open(msg.data,'_blank','location=no,toolbar=no,hidden=no,zoom=yes,enableViewportScale=yes');
 		}
 		//var url='http://195.154.116.73/test/';
 		
@@ -72,7 +72,8 @@
         
           return networkState;
         
-       }
+		}
+	   
     </script>
 </head>
 <body>
