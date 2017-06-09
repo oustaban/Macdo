@@ -54,19 +54,11 @@
 		function listenMessage(msg) {
 			console.log(msg.data);
 			if (device.platform.toLowerCase() == 'android'){
-				var onSuccess = function(data) {
-					alert('message: ' + data.message);
-				};
-				
-				// onError Callback receives a json object
-				//
-				function onError(error) {
-					alert('message: ' + error.message);
-				}
+				cordova.InAppBrowser.open(msg.data,'_system','location=no,toolbar=yes,hidden=no,zoom=yes,enableViewportScale=yes,clearcache=yes,clearsessioncache=yes,useWideViewPort=no');
 								
 				window.cordova.plugins.FileOpener.openFile(msg.data, onSuccess, onError);
 			} else if(device.platform.toLowerCase() == 'ios'){
-					cordova.InAppBrowser.open(msg.data,'_self','location=no,toolbar=yes,hidden=no,zoom=yes,enableViewportScale=yes,clearcache=yes,clearsessioncache=yes,useWideViewPort=no');
+					cordova.InAppBrowser.open(msg.data,'_blank','location=no,toolbar=yes,hidden=no,zoom=yes,enableViewportScale=yes,clearcache=yes,clearsessioncache=yes,useWideViewPort=no');
 			}
 		}
 		//var url='http://195.154.116.73/test/';
