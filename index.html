@@ -49,9 +49,10 @@
 			//var ref = window.open('http://195.154.116.73/test/', '_blank' ,'toolbar=no,location=no');
 
 
-			/*
+			
 			ref.addEventListener('loadstart', function(e) {
 			
+				console.log('loadstart');
 				if(e.url.indexOf('system_browser') > -1) {
 			
 			
@@ -71,6 +72,7 @@
 			});
 			ref.addEventListener('loadstop', function(e) {
 			
+				console.log('loadstop');
 				if(e.url.indexOf('system_browser') > -1) {
 				
 					ref.history.back();
@@ -80,7 +82,7 @@
 			
 			
 			});
-			*/
+			
 		});
 		
 		//var url='http://195.154.116.73/test/';
