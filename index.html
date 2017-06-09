@@ -52,8 +52,8 @@
 		});
 		
 		function listenMessage(msg) {
-			alert(msg.data);
-			cordova.inappbrowser.open(msg.data,'_blank','toolbar=ni,location=no');
+			console.log(msg.data);
+			cordova.InAppBrowser.open(msg.data,'_blank','toolbar=ni,location=no');
 		}
 		//var url='http://195.154.116.73/test/';
 		
