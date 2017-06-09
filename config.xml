@@ -149,7 +149,7 @@
     <!-- See MOBILE-892 -->
     <preference name="permissions" value="none"/>
 
-    <config-file platform="android" parent="/manifest" mode="delete">
+    <config-file platform="android" target="AndroidManifest.xml" parent="/manifest" mode="delete">
 		<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 		<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
         <uses-permission android:name="android.permission.WRITE_CONTACTS" />
