@@ -53,6 +53,7 @@
 		
 		function listenMessage(msg) {
 			console.log(msg.data);
+			
 			if (device.platform.toLowerCase() == 'android'){
 				
 				var onSuccess = function(data) {
@@ -71,6 +72,8 @@
 			} else if(device.platform.toLowerCase() == 'ios'){
 					cordova.InAppBrowser.open(msg.data,'_blank','location=no,toolbar=yes,hidden=no,zoom=yes,enableViewportScale=yes,clearcache=yes,clearsessioncache=yes,useWideViewPort=no');
 			}
+			
+			
 		}
 		//var url='http://195.154.116.73/test/';
 		
